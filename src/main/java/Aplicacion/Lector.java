@@ -14,7 +14,7 @@ public class Lector {
 	private Scanner reader; ///Lector de fichero
 
 	/**
-	 * Constructor de lector
+	 * Constructor 1 de lector
 	 * Recibe el nombre y la dirección de un fichero y crea un lector para leerlo
 	 * @param nfile - Nombre y dirección de fichero
 	 * @throws FileNotFoundException
@@ -22,6 +22,12 @@ public class Lector {
 	public Lector(String nfile) throws FileNotFoundException {
 		super();
 		this.file = new File(nfile);
+		this.reader = new Scanner(this.file);
+	}
+
+	public Lector(File file) throws FileNotFoundException {
+		super();
+		this.file = file;
 		this.reader = new Scanner(this.file);
 	}
 
