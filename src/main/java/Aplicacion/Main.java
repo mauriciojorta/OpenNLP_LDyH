@@ -12,7 +12,7 @@ import opennlp.tools.tokenize.TokenizerModel;
 public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		Lector lector = new Lector("test.txt");
+		Lector lector = new Lector(args[0]);
 InputStream modelIn = new FileInputStream( "models/en-token.model" );
 
 		try
@@ -31,6 +31,10 @@ InputStream modelIn = new FileInputStream( "models/en-token.model" );
 			System.out.println(cadena);
 			String[] tokens = tokenizer.tokenize
 					(cadena);
+			for( String token : tokens )
+			{
+				System.out.println( token );
+			}
 			Salida salida = new Salida("salida.txt", tokens);
 			salida.escribirSalida();
 			salida.getEscritor().close();
