@@ -1,6 +1,7 @@
-package Aplicacion;
+﻿package Aplicacion;
 
 import java.awt.EventQueue;
+
 
 import javax.swing.JFrame;
 import javax.swing.JTextField;
@@ -19,6 +20,13 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
+
+/**
+ * Interfaz gráfica de prueba. Permite cargar un fichero a leer, extraer su contenido y retornar
+ * su salida tokenizada en un fichero.
+ * @author Mauricio
+ *
+ */
 
 public class Ventana {
 

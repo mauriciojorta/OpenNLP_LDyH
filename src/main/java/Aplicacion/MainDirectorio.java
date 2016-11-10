@@ -1,4 +1,4 @@
-package Aplicacion;
+﻿package Aplicacion;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,7 +10,11 @@ import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
 import opennlp.tools.util.InvalidFormatException;
-
+/**
+ * Clase ejecutable de prueba para la función de lectura de directorios por parámetros
+ * @author Mauricio
+ *
+ */
 public class MainDirectorio {
 
 	public static void main(String[] args) throws InvalidFormatException, IOException {

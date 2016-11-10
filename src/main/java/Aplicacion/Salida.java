@@ -1,11 +1,11 @@
-package Aplicacion;
+ï»¿package Aplicacion;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
 /**
- * Clase para la  generación de ficheros de salida tokenizados
+ * Clase para la  generaciÃ³n de ficheros de salida tokenizados
  * @author Mauricio
  *
  */
@@ -16,8 +16,8 @@ public class Salida {
 	/**
 	 * Constructor de Salida
 	 * Crea un flujo de salida en un nuevo fichero o sobre uno ya existente y recibe un conjunto de
-	 * tokens a escribir en él.
-	 * @param nfile - Nombre y dirección de fichero
+	 * tokens a escribir en Ã©l.
+	 * @param nfile - Nombre y direcciÃ³n de fichero
 	 * @param tokens - Tokens
 	 * @throws FileNotFoundException
 	 */
@@ -40,28 +40,28 @@ public class Salida {
 	}
 
 	/**
-	 * @return the escritor
+	 * @return el escritor de ficheros
 	 */
 	public PrintStream getEscritor() {
 		return escritor;
 	}
 
 	/**
-	 * @param escritor the escritor to set
+	 * @param escritor - el escritor de ficheros a configurar
 	 */
 	public void setEscritor(PrintStream escritor) {
 		this.escritor = escritor;
 	}
 
 	/**
-	 * @return the tokens
+	 * @return la lista de tokens obtenida
 	 */
 	public String[] getTokens() {
 		return tokens;
 	}
 
 	/**
-	 * @param tokens the tokens to set
+	 * @param tokens - la lista de tokens a asignar
 	 */
 	public void setTokens(String[] tokens) {
 		this.tokens = tokens;

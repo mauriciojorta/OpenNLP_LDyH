@@ -1,4 +1,4 @@
-package Aplicacion;
+﻿package Aplicacion;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -15,8 +15,8 @@ public class Lector {
 
 	/**
 	 * Constructor 1 de lector
-	 * Recibe el nombre y la direcci�n de un fichero y crea un lector para leerlo
-	 * @param nfile - Nombre y direcci�n de fichero
+	 * Recibe el nombre y la dirección de un fichero y crea un lector para leerlo
+	 * @param nfile - Nombre y dirección de fichero
 	 * @throws FileNotFoundException
 	 */
 	public Lector(String nfile) throws FileNotFoundException {
@@ -25,6 +25,14 @@ public class Lector {
 		this.reader = new Scanner(this.file);
 	}
 
+	/**
+	 * Constructor 2 de lector
+	 * Recibe un fichero como parámetro y lo asignacomo el fichero del lector y crea un escáner
+	 * para leerlo
+	 * @param file - Fichero a asignar
+	 * @throws FileNotFoundException
+	 */
+
 	public Lector(File file) throws FileNotFoundException {
 		super();
 		this.file = file;
@@ -32,28 +40,28 @@ public class Lector {
 	}
 
 	/**
-	 * @return the file
+	 * @return fichero a leer
 	 */
 	public File getFile() {
 		return file;
 	}
 
 	/**
-	 * @param file the file to set
+	 * @param file - Fichero a asignar
 	 */
 	public void setFile(File file) {
 		this.file = file;
 	}
 
 	/**
-	 * @return the reader
+	 * @return el lector  o escáner
 	 */
 	public Scanner getReader() {
 		return reader;
 	}
 
 	/**
-	 * @param reader the reader to set
+	 * @param reader - El lector o escáner a configurar
 	 */
 	public void setReader(Scanner reader) {
 		this.reader = reader;

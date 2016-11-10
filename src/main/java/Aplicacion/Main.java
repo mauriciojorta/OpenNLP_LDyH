@@ -1,4 +1,4 @@
-package Aplicacion;
+﻿package Aplicacion;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,7 +10,12 @@ import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
 import opennlp.tools.util.InvalidFormatException;
-
+/**
+ * Clase ejecutable principal del programa. Incorpora lectura de ficheros y directorios por
+ * parámetros.
+ * @author Mauricio
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) throws InvalidFormatException, IOException {
