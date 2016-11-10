@@ -1,20 +1,19 @@
-Code to accompany Phil's June 2015 Tri-JUG presentation
-on OpenNLP.
+# Aplicación de OpenNLP
 
-# Notes:
+Pequeña aplicación para lectura y tokenización de ficheros de texto con OpenNLP.
 
-TBD...
+## Funcionalidades
 
-# Links:
+Lectura de ficheros por parámetros. (opción f)
 
-## The OpenNLP Manual
-* http://opennlp.apache.org/documentation/1.5.3/manual/opennlp.html
+Lectura de directorios por parámetros (opción d)
 
-## Where to find POS Tagger training data in TreeBank II format
-* http://stackoverflow.com/questions/8949517/is-there-any-treebank-for-free
+La versión actual sólo se carga como proyecto de Eclipse y muestra su salida por la consola de la máquina virtual de Java.
 
-## A source for Chunker training data
-* http://www.cnts.ua.ac.be/conll2000/chunking/
+## Ejemplo de uso
 
-## A good source for general English text to use for training tasks
-http://www.gutenberg.org
+```
+f fichero.txt
+
+d directorio
+```
